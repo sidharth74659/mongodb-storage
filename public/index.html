@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./build/style.css">
-</head>
-<body>
-    <main class="container text-4xl">
-        mian index.html
-    </main>
-    <script src="script.js"></script>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./build/style.css">
+    </head>
+
+    <body>
+        <main>
+
+            <div
+                class="min-h-screen flex flex-col gap-16 items-center bg-red-400 sm:bg-yellow-400 md:bg-blue-400 lg:bg-gray-400 xl:bg-purple-400 2xl:bg-green-800">
+                <div class="pt-5 flex">
+                    <input class="" type="text" name="input" id="input" />
+                    <button class="bg-blue-600 text-pink-500 px-4 py-1 cursor-pointer">add</button>
+                </div>
+
+                <ul class="list flex flex-col gap-4">
+                    <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4">
+                        <div>
+                            <input class="h-6 w-6" type="checkbox" name="task" id="one" />
+                        </div>
+                        <div>
+                            <label for="one" class="block task-text text-xl font-bold tracking-wide">Have to Sllep oi
+                                time</label>
+                            <small class="text-xl uppercase">08:00 Am</small>
+                        </div>
+                    </li>
+                    <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4">
+                        <div>
+                            <input class="h-6 w-6" type="checkbox" name="task" id="two" />
+                        </div>
+                        <div>
+                            <label for="two" class="block task-text text-xl font-bold tracking-wide">Have to Sllep oi
+                                time</label>
+                            <small class="text-xl uppercase">08:00 Am</small>
+                        </div>
+                    </li>
+                    <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4">
+                        <div>
+                            <input class="h-6 w-6" type="checkbox" name="task" id="three" />
+                        </div>
+                        <div>
+                            <label for="three" class="block task-text text-xl font-bold tracking-wide">Have to Sllep oi
+                                time</label>
+                            <small class="text-xl uppercase">08:00 Am</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+
 </html>
