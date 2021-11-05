@@ -1,0 +1,24 @@
+{
+  "name": "mongodb-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sidharth74659: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@github.com/sidharth74659/mongodb-storage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidharth74659/mongodb-storage/issues"
+  },
+  "homepage": "https://github.com/sidharth74659/mongodb-storage#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14"
+  }
+}
