@@ -14,13 +14,13 @@ This installs a package.json
 
 #### `folder structure` :
 
-    - server.js
-    - package.json
-    - package-lock.json
-    - public 
-        - index.html
-        - styles.css
-        - script.js
+    | - server.js
+    | - package.json
+    | - package-lock.json
+    | - public 
+    |  | - index.html
+    |  | - styles.css
+    |  | - script.js
 
 #### scripts  in `package.json`
 
@@ -47,3 +47,26 @@ This installs a package.json
         console.log("server up & running");
     })
     
+
+
+
+
+##TAILWIND SETTUP
+
+#### for npm
+    npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+#### Create 
+
+    css/tailwind.css
+
+#### run `build` using tailwindcss-cli
+
+    npx tailwindcss-cli build -i css/tailwind.css -o ./public/style.css
+
+
+### Three Tailwind Layers
+
+    @tailwind base;         // css-reset (to look same in all browsers)
+    @tailwind components;   // .container (one-and-only class component : a responsive max-width container)
+    @tailwind utilities;    // for all the utillty classes : pt-4, shadow-sm, grid-cols-11 ...

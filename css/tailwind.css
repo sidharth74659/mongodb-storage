@@ -1,0 +1,7 @@
+.hello {
+    color: tomato;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
