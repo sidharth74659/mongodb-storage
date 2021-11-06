@@ -5,13 +5,13 @@ const mongoose = require('mongoose')
 
 // Schema definition
 const TodoSchema = new mongoose.Schema({
-    record: {
+    task: {
         type: String,
         required: true
     },
     data: {
         type: Number,
-        default: 100
+        default: () => Date.now()
     }
 })
 
