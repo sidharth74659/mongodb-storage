@@ -18,28 +18,46 @@
                     <button type="submit" class="bg-blue-600 text-pink-500 px-4 py-1 cursor-pointer">add</button>
                 </form>
 
-                <ul class="list flex flex-col gap-4">
+                <ul class="js-list flex flex-col gap-4">
                     <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4 bg-blue-400">
                         <input class="h-6 w-6" type="checkbox" name="task" id="task-1" />
-                        <label for="task-1" class="block task-text text-xl font-bold tracking-wide flex-grow">
-                            Have to Sleep on time
-                        </label>
-                        <button class="js-delete border-l-2">Delete</button>
+                        <!-- <label for="task-1" class="block task-text text-xl font-bold tracking-wide flex-grow">
+                        </label> -->
+                        <input type="text" 
+                        class="js-task bg-white font-bold outline-none disabled:bg-transparent "
+                        value="Have to Sleep on time" 
+                        disabled>
+                        <div class="js-btns flex">
+                            <button class="js-edit border-l-2">Edit</button>
+                            <button class="js-done hidden border-l-2">Done</button>
+                            <button class="js-delete border-l-2">Delete</button>
+                        </div>
                     </li>
                     <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4 bg-blue-400">
                         <input class="h-6 w-6" type="checkbox" name="task" id="task-1" />
-                        <label for="task-1" class="block task-text text-xl font-bold tracking-wide flex-grow">
-                            Have to Sleep on time
-                        </label>
-                        <button class="js-delete border-l-2">Delete</button>
+                        <input type="text" 
+                        class="js-task bg-white font-bold outline-none disabled:bg-transparent "
+                        value="Have to  on time" 
+                        disabled>
+                        <div class="js-btns flex">
+                            <button class="js-edit border-l-2">Edit</button>
+                            <button class="js-done hidden border-l-2">Done</button>
+                            <button class="js-delete border-l-2">Delete</button>
+                        </div>
                     </li>
                     <li class="border-l-2 border-pink-600 p-2 flex h-full items-center gap-4 bg-blue-400">
                         <input class="h-6 w-6" type="checkbox" name="task" id="task-1" />
-                        <label for="task-1" class="block task-text text-xl font-bold tracking-wide flex-grow">
-                            Have to Sleep on time
-                        </label>
-                        <button class="js-delete border-l-2">Delete</button>
+                        <input type="text" 
+                        class="js-task bg-white font-bold outline-none disabled:bg-transparent "
+                        value="Have to time" 
+                        disabled>
+                        <div class="js-btns flex">
+                            <button class="js-edit border-l-2">Edit</button>
+                            <button class="js-done hidden border-l-2">Done</button>
+                            <button class="js-delete border-l-2">Delete</button>
+                        </div>
                     </li>
+                    
                 </ul>
             </div>
 

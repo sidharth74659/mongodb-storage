@@ -11,7 +11,7 @@ const TodoSchema = new mongoose.Schema({
     },
     data: {
         type: Number,
-        default: () => Date.now()
+        default: Date.now()
     }
 })
 

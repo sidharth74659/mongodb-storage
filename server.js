@@ -7,7 +7,10 @@ const mongoose = require('mongoose')
 //  import js modules
 const TodoModel = require('./models/todo.js')
 
+// import route modules
+const dbRoute = require('./routes/dbRoute.js')
 
+// express setup
 const app = express()
 const PORT = process.env.PORT || 5500
 
@@ -18,28 +21,18 @@ mongoose.connect("mongodb+srv://user:user@cluster0.0lk24.mongodb.net/myFirstData
 });
 
 // middlewares
-app.use('/', express.static(path.resolve(__dirname, 'public')))
-app.use(express.json());
+
+app.use('/', express.static(path.resolve(__dirname, 'public'))) // Static folder
+app.use(express.json());    // Body parser
 
 // network requests
-app.get('/', (req, res) => {
-    res.send('root')
-})
+// app.get('/', (req, res) => {
+//     // res.send('root')
+//     res.send('<h1>afasf</h1>')
+// })
 
-app.post('/api/create', async (req, res) => {
-    let task = req.body
-    console.log(task);
-
-    res.send({ data: task, msg: "Success" })
-    try {
-        let response = await TodoModel.create(task)
-        console.log(response);
-    }
-    catch (err) {
-        console.log("err : ");
-        console.log(err);
-    }
-})
+// routes
+app.use('/api', dbRoute)
 
 
 // PORT listener
