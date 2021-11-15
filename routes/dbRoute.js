@@ -30,11 +30,10 @@ router.get('/read', async (req, res) => {
     res.json(records)
 })
 
-router.get('/update', async (req, res) => {
-    // const records = [{record: 'One'},{record: 'Two'}]    // static array of data
+router.post('/update', async (req, res) => {
+    const { oldTask, newTask } = req.body
 
-    // const records = await TodoModel.findOne({ task : 'asgasg' }) // for a particular record
-    const records = await TodoModel.find({})    // for every document in that collection
+    const records = await TodoModel.updateOne({ task: oldTask }, { $set: { task: newTask } })
 
     res.json(records)
 })
